@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary: hsla(240, 2%, 11%, 0.65);
+    --secondary: hsla(180, 2%, 10%, 0.65);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: hsla(0, 0%, 86%, 0.65);
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fa-solid {
+    font-size: 1.5rem;
+}
+
+/* -------------------------------  HEADER  ------------------------------ */
+
+header {
+    padding: 17px 0;
+    /* background-color: rgb(184, 184, 218); */
+    background: linear-gradient(120deg, var(--primary), var(--secondary)), url(./images/pexels-lagos-food-bank-initiative-9090747.jpg) no-repeat center center / cover;
+    height: 100vh;
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header nav p {
+    font-size: 1.2rem;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.fa-hands-holding-child {
+    font-size: 1.2rem;
+    padding-right: 1px;
+}
+
+.fa-bars, .fa-xmark {
+    display: none;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+header nav ul a {
+    color: #fff;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+
+/* -------------------------- HERO SECTION ------------------- */
+
+.hero {
+    margin-top: 70px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.7;
+    word-spacing: 4px;
+}
+
+.hero p:nth-child(3) {
+    margin-top: 40px;
+    font-size: 1.3rem;
+}
+
+.hero p > span {
+    margin-right: 5px;
+}
+
+.hero a {
+    background-color: #000;
+    padding: 1rem 4rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: initial;
+    word-spacing: 3px;
+    font-size: 1.1rem;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 1px;
+}
+
+main {
+    margin-top: 25px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px) {
+
+    .container {
+        width: 93%;
+    }
+
+    header {
+        background-size: cover;
+        background-position: right;
+        padding: 10px 0;
+    }
+
+    .fa-bars, .fa-xmark {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    header nav ul .fa-xmark {
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    /* ----------------- HERO ----------- */
+
+    header h1 {
+        margin-top: -20px;
+    }
+
+    .hero p {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: -10px;
+        margin-bottom: -30px;
+    }
+}
