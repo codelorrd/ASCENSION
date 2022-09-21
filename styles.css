@@ -332,6 +332,10 @@ footer p {
         display: none;
     }
 
+    .hero h2 ~ p:nth-child(5) {
+        display: block;
+    }
+
     .hero a {
         margin-top: 20px;
     }
