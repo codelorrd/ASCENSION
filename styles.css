@@ -169,29 +169,50 @@ main h2 {
     font-weight: 700;
     color: #000;
     margin-bottom: 20px;
+    display: none;
 }
+
+h2.h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    display: block;
+}
+
 .mission p {
     line-height: 1.54;
 }
 
 /* ---------------------------------- vISION--------------------------------- */
 
-section.vision {
+section.visions {
     margin-top: 40px;
 }
 
-section.vision .container {
+section.visions .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-section.vision h2 {
+section.visions h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
     color: #000;
     margin-bottom: 20px;
+    /* display: none; */
+}
+
+h2.vs {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    display: none;
 }
 
 .vision p {
